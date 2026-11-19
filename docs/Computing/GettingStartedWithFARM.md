@@ -119,6 +119,7 @@ that, which keeps environments reproducible and avoids conflicts.
 module avail                 # list ALL available modules
 module avail netcdf          # search for a module
 module load conda            # load a module (default version)
+module load netcdf-c         # needed for ncdump
 module load cdo/<version>    # load a specific version
 module list                  # what you have loaded
 module whatis <name>         # short description
