@@ -1,7 +1,7 @@
 # Global Environmental Change Lab Manual
 
-Welcome to the **Global Environmental Change Lab** at the University of California, Davis! The lab
-is managed by **Professor Erwan Monier**.
+Welcome to the **Global Environmental Change Lab**, managed by **Professor Erwan Monier** at the
+University of California, Davis!
 
 ```{figure} Images/lab_photo.jpg
 :alt: Members of the Global Environmental Change Lab standing together in front of a shingled building
