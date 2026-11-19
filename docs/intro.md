@@ -1,6 +1,14 @@
 # Global Environmental Change Lab Manual
 
-Welcome to the **Global Environmental Change Lab** at the University of California, Davis!
+Welcome to the **Global Environmental Change Lab** at the University of California, Davis! The lab
+is managed by **Professor Erwan Monier**.
+
+```{figure} Images/lab_photo.jpg
+:alt: Members of the Global Environmental Change Lab standing together in front of a shingled building
+:width: 100%
+
+The Global Environmental Change Lab.
+```
 
 This lab manual is the one place to find what you need when you join the group: how the lab works,
 what to do in your first weeks, how to compute on FARM, how we write code and manage data,
@@ -19,8 +27,6 @@ please fix it (see [Contributing](Contributing/Instructions.md)).
 Undergraduate or high school student? Start with
 [Undergraduate and High School Researchers](Onboarding/StudentResearchers.md).
 ```
-
-<!-- TODO: add a lab photo, e.g.  ![The lab, Fall 2026](Images/lab_photo.jpg)  -->
 
 ## What's in this manual
 
@@ -71,7 +77,8 @@ We study how the Earth system responds to global environmental change, and what 
 people, ecosystems, and resources, using climate and Earth-system models, observations, and
 integrated assessment approaches.
 
-The lab is part of the Department of Land, Air and Water Resources (LAWR) at UC Davis.
+The lab is managed by Professor Erwan Monier and is part of the Department of Land, Air and Water
+Resources (LAWR) at UC Davis.
 
 ## Lab GitHub resources
 
