@@ -23,12 +23,13 @@ then complete it from the email you receive. See
 - [ ] Join the lab **Slack** workspace (ask the PI for an invitation). <!-- TODO: add Slack invite link or process -->
 - [ ] Get access to the lab **Box** folder (ask the PI to share it with your UC Davis account).
 - [ ] Find your own folder in the Box folder and your 1:1 **meeting-notes Google Doc** in it (ask if they don't exist yet).
+- [ ] Ask **Tessa** to add you to the lab **Google Calendar**.
 - [ ] Accept the weekly lab-meeting invitation and set up your 1:1 meetings with the PI.
 - [ ] Send the PI a photo and short bio for the lab website.
 
 ## Research computing
 
-- [ ] Create a GitHub account and join the UCDglobalchange organization ([Git and GitHub](../CodingAndData/GitAndGithub.md)).
+- [ ] Create a GitHub account and ask **Heather** to add you to the UCDglobalchange organization ([Git and GitHub](../CodingAndData/GitAndGithub.md)).
 - [ ] Request a FARM account through HiPPO ([Getting Started with FARM](../Computing/GettingStartedWithFARM.md)).
 - [ ] Install the core software in [Software Onboarding](SoftwareOnboarding.md).
 - [ ] Read about the lab's models, [GDSTEM and AquaCrop](LabModels.md).

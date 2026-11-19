@@ -20,8 +20,8 @@ The [First-Week Checklist](FirstWeekChecklist.md) lists every account and task t
 you arrive. In short, you will need to:
 
 - get your UC Davis computing account (Kerberos login) and email set up;
-- join the lab **Slack** workspace, the lab **Box** folder, and the lab calendar;
-- join the lab GitHub organization, [UCDglobalchange](https://github.com/UCDglobalchange) ([Git and GitHub](../CodingAndData/GitAndGithub.md));
+- join the lab **Slack** workspace, the lab **Box** folder, and the lab Google Calendar (managed by Tessa);
+- join the lab GitHub organization, [UCDglobalchange](https://github.com/UCDglobalchange), managed by Heather ([Git and GitHub](../CodingAndData/GitAndGithub.md));
 - request a FARM account ([Getting Started with FARM](../Computing/GettingStartedWithFARM.md)).
 
 ## Lab roles
