@@ -13,7 +13,6 @@ Sciences and supported by UC Davis HPC Core Facility (HPCCF).
 | Slurm account | `--account=moniergrp` |
 | Partitions | `low` by default · `high` when a job needs high priority · `bml` for very large memory |
 | Web interface | [Open OnDemand](https://ondemand.farm.hpc.ucdavis.edu) |
-| Lab FARM code & examples | <https://github.com/UCDglobalchange/FARM> |
 | Help | `farm-hpc@ucdavis.edu` · <https://docs.hpc.ucdavis.edu/farm/> |
 ```
 
@@ -51,7 +50,19 @@ or forget the passphrase, it cannot be recovered: generate a new pair and update
 
 ## 3. Log in
 
-Use a terminal: Terminal or iTerm2 on macOS; Windows Terminal, WSL, or MobaXterm on Windows.
+You need a terminal program that can use SSH keys:
+
+- **macOS**: the built-in [Terminal](https://support.apple.com/guide/terminal/welcome/mac) or
+  [iTerm2](https://iterm2.com).
+- **Windows**: [Windows Terminal](https://aka.ms/terminal) with OpenSSH or
+  [WSL](https://learn.microsoft.com/windows/wsl/install) (then follow the Linux/macOS steps), or
+  [MobaXterm](https://mobaxterm.mobatek.net), an all-in-one terminal that can also edit files
+  locally and upload changes back to FARM. [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
+  also works.
+- **Linux**: any terminal.
+
+FARM supports **one key per user**. To log in from several computers (e.g., a desktop and a
+laptop), copy your private key to each one rather than creating new keys.
 
 ```bash
 ssh <your-kerberos-id>@farm.hpc.ucdavis.edu
@@ -100,15 +111,28 @@ elsewhere (see [Data Transfer and Storage](DataTransferAndStorage.md)).
 
 ## 5. Software modules
 
-Most software is available as environment modules:
+Most software on FARM is available as **environment modules**. Loading a module adjusts your
+environment (e.g., your `PATH`) so the software and its dependencies work, and unloading it undoes
+that, which keeps environments reproducible and avoids conflicts.
 
 ```bash
-module avail                 # list everything
-module avail netcdf          # search
-module load conda            # load a module (add /version for a specific one)
-module list                  # what's loaded
+module avail                 # list ALL available modules
+module avail netcdf          # search for a module
+module load conda            # load a module (default version)
+module load cdo/<version>    # load a specific version
+module list                  # what you have loaded
+module whatis <name>         # short description
+module help <name>           # more detailed help
+module unload <name>         # unload one module
 module purge                 # unload everything
 ```
+
+Several versions of a package are often available; `module load <name>` loads the default, and
+`module load <name>/<version>` picks a specific one. Load as few modules as you need at a time, and
+unload a module when you're done with it, to avoid incompatibilities. Full help: `man module`.
+
+If you find a broken module, email `farm-hpc@ucdavis.edu` with your username, the cluster, the
+directory, the exact command, and the full error output.
 
 If something you need is missing, email `farm-hpc@ucdavis.edu` with the software name, a link to
 it, and your username.

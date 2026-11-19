@@ -80,12 +80,15 @@ integrated assessment approaches.
 The lab is managed by Professor Erwan Monier and is part of the Department of Land, Air and Water
 Resources (LAWR) at UC Davis.
 
-## Lab GitHub resources
+## Lab tutorials
 
-- [UCDglobalchange](https://github.com/UCDglobalchange) — the lab's GitHub organization
-- [FARM](https://github.com/UCDglobalchange/FARM) — instructions and scripts for the FARM cluster
-- [GitHub](https://github.com/UCDglobalchange/GitHub) — the lab's Git/GitHub tutorial
-- [GitHub-website](https://github.com/UCDglobalchange/GitHub-website) — tutorial for building your personal website
+The manual includes the lab's step-by-step tutorials:
+
+- [Computing on FARM](Computing/GettingStartedWithFARM.md): accounts, Slurm jobs, storage, and
+  Jupyter on the FARM cluster
+- [Git and GitHub](CodingAndData/GitAndGithub.md): setting up Git and collaborating in the
+  [UCDglobalchange](https://github.com/UCDglobalchange) organization
+- [Your Personal Website](CodingAndData/PersonalWebsite.md): building your own site on GitHub Pages
 
 ---
 

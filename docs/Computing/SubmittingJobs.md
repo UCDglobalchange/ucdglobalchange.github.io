@@ -30,8 +30,7 @@ sacctmgr -s list user $USER format=account%20,partition%20
 
 ## A basic batch job
 
-Save this as `myjob.sh` (a template is also in the
-[lab FARM repo](https://github.com/UCDglobalchange/FARM)):
+Save this as `myjob.sh`:
 
 ```bash
 #!/bin/bash -l
@@ -117,6 +116,43 @@ cp output.nc /quobyte/emoniergrp/<you>/results/output-${SLURM_JOB_ID}.nc   # cop
 
 Local scratch is deleted when the job ends.
 
+## Slurm command reference
+
+| Command | What it does |
+|---------|--------------|
+| `sbatch script.sh` | Submit a batch job script |
+| `srun ...` | Run a command or interactive shell as a job, or launch parallel tasks inside a job |
+| `squeue -u $USER` | Show your queued and running jobs |
+| `scancel <jobid>` | Cancel a job (e.g., you submitted the wrong script) |
+| `sinfo` | State of partitions and nodes |
+| `sacct -j <jobid>` | Accounting info for a finished job (state, time, memory used) |
+| `scontrol show -d job <jobid>` | Detailed information about a job |
+
+## `#SBATCH` option reference
+
+| Option | Meaning |
+|--------|---------|
+| `--job-name=myjob` | Job name shown in `squeue` |
+| `--account=moniergrp` | The lab's Slurm account |
+| `--partition=low` | Partition (`low`, `high`, or `bml`) |
+| `--time=2-12:00:00` | Maximum run time (here 2 days 12 hours); the job is killed after this |
+| `--nodes=1` | Number of nodes |
+| `--ntasks=10` | Number of tasks (processes), e.g. MPI ranks |
+| `--ntasks-per-node=8` | Tasks per node (can't exceed the node's cores) |
+| `--cpus-per-task=4` | CPU cores per task (threads) |
+| `--mem=16G` | Memory per node |
+| `--mem-per-cpu=4G` | Memory per CPU |
+| `--output=myjob-%j.out` | Standard output file (`%j` = job ID; `%N` = node name) |
+| `--error=myjob-%j.err` | Standard error file |
+| `--array=0-99%20` | Job array (indices 0–99, at most 20 at once) |
+| `--mail-type=END,FAIL` | Email on `BEGIN`, `END`, `FAIL`, or `ALL` |
+| `--mail-user=<you>@ucdavis.edu` | Where to send the emails |
+| `--begin=now+1hour` | Don't start before this time (absolute times like `2026-12-01T01:30:00` also work) |
+| `--dependency=afterok:<id1>:<id2>` | Start only after these jobs finish successfully (`afterany`: finish in any state) |
+
+All options: `sbatch --help`, `sbatch --usage`, or the
+[Slurm documentation](https://slurm.schedmd.com/documentation.html).
+
 ## Handy aliases
 
 Add these to `~/.bashrc` on FARM:
@@ -124,6 +160,7 @@ Add these to `~/.bashrc` on FARM:
 ```bash
 alias sq='squeue -u $USER'              # my jobs
 alias sjob='scontrol show -d job'       # details: sjob <jobid>
+alias sqbml='squeue -p bml'             # who is using the big-memory partition
 ```
 
 ## When a job fails

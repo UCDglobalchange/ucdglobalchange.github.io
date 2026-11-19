@@ -1,9 +1,9 @@
 # Git and GitHub
 
 All lab code lives under version control in the lab GitHub organization,
-**[UCDglobalchange](https://github.com/UCDglobalchange)**. This page summarizes the lab workflow;
-the full step-by-step tutorial is in the
-[lab GitHub repo](https://github.com/UCDglobalchange/GitHub).
+**[UCDglobalchange](https://github.com/UCDglobalchange)**. This tutorial walks you through setting
+up a GitHub account and Git, creating a repository, contributing code, and staying in sync when
+collaborating, whether you work on FARM or on your own computer.
 
 ## 1. Create an account and join the organization
 
@@ -35,24 +35,52 @@ Add it at <https://github.com/settings/keys> (**New SSH key**, name it e.g. "FAR
 ssh -T git@github.com    # "Hi <username>! You've successfully authenticated..."
 ```
 
-## 4. Create or clone a repository
+## 4. Create a repository on GitHub
 
-Create new repositories **inside the UCDglobalchange organization** (choose Private or Public, and
-tick *Add a README*). Then:
+Create new project repositories **inside the UCDglobalchange organization**:
+
+1. Log in to <https://github.com> and go to the
+   [UCDglobalchange](https://github.com/UCDglobalchange) organization.
+2. Click **New** (or the **+** icon in the upper right → **New repository**) and make sure the
+   **Owner** is `UCDglobalchange`.
+3. Fill in the details:
+   - **Repository name**, e.g. `my-project` (short, lowercase, hyphens);
+   - a short **description**;
+   - **Private** or **Public**, depending on who needs access (discuss with the PI);
+   - ✅ **Add a README file**.
+4. Click **Create repository**.
+
+## 5. Clone the repository to FARM (or your computer)
 
 ```bash
-git clone git@github.com:UCDglobalchange/<repo>.git
-cd <repo>
+git clone git@github.com:UCDglobalchange/my-project.git
+cd my-project
 ```
 
-To connect an existing folder of code instead:
+To add code you already have, copy it into the repository folder:
 
 ```bash
+cp -r /path/to/your/code/* .
+```
+
+Or, to connect an existing folder that isn't a Git repository yet:
+
+```bash
+cd /path/to/your/code
 git init
-git remote add origin git@github.com:UCDglobalchange/<repo>.git
+git remote add origin git@github.com:UCDglobalchange/my-project.git
+git pull origin main          # bring in the README created on GitHub
 ```
 
-## 5. Daily workflow
+Then commit and push your code for the first time:
+
+```bash
+git add .
+git commit -m "Initial commit of preprocessing scripts"
+git push origin main
+```
+
+## 6. Daily workflow
 
 Which workflow you use depends on who works in the repository:
 
@@ -134,11 +162,43 @@ git clean -fd
 - One repository per project or paper, in the UCDglobalchange organization.
 - Push directly to `main` only in your own repositories; use pull requests in shared ones.
 - Use the standard [project layout](PaperRepositories.md) and a `README.md`.
-- **Never commit large data or model output.** Add a `.gitignore` (start from GitHub's
-  [Python template](https://github.com/github/gitignore/blob/main/Python.gitignore)) with entries
-  like `*.nc`, `*.log`, `__pycache__/`.
-- Add a `LICENSE` (MIT is recommended for academic code).
+- **Never commit large data or model output** (see `.gitignore` below).
+- Add a `LICENSE` (MIT is recommended for academic code; see below).
 - Commit early and often, with clear messages.
+
+## Add a `.gitignore`
+
+A `.gitignore` file lists files Git should not track, such as large data, model output, compiled
+code, temporary logs, and machine-specific settings. Start from GitHub's Python template:
+
+```bash
+curl https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore -o .gitignore
+```
+
+Then add entries for your project, for example:
+
+```text
+*.nc
+*.log
+__pycache__/
+temp/
+results/
+```
+
+Commit it like any other file:
+
+```bash
+git add .gitignore
+git commit -m "Add .gitignore"
+git push origin main
+```
+
+## Add a license
+
+A license tells others how they may reuse your code. MIT is recommended for academic code. The
+easiest way to add one is on GitHub: **Add file → Create new file**, name it `LICENSE`, click
+**Choose a license template**, pick **MIT License**, and commit. Then run `git pull` to get it
+locally. You can also choose a license when you create the repository.
 
 ## Learning resources
 
