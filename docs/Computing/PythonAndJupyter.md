@@ -73,6 +73,6 @@ the same way.
 | `cftime`, `pandas` | Model calendars and time series |
 | `intake-esm` | Catalogs of CMIP-style data |
 
-Command-line tools are available as modules: `module load cdo` for **CDO**, `module load nco` for **NCO**, and `module load netcdf-c` for **`ncdump`** (which doesn't work without it).
+Command-line tools come from FARM's modules only (don't install them with conda): `module load cdo` for **CDO**, `module load nco` for **NCO**, and `module load netcdf-c` for **`ncdump`** (which doesn't work without it).
 
 <!-- TODO: link to a shared lab environment.yml. -->

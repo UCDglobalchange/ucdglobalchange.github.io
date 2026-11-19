@@ -38,8 +38,8 @@ See [Python and Jupyter on FARM](../Computing/PythonAndJupyter.md) for using env
 averaging, regridding, and combining NetCDF files. They are the quickest way to explore and
 preprocess model output and climate datasets.
 
-- **On FARM**: load each tool's module before using it (in an interactive session or in your job
-  script):
+- **On FARM**: always use the modules; don't install CDO or NCO in a conda environment. Load each
+  tool's module before using it (in an interactive session or in your job script):
 
   ```bash
   module load cdo        # CDO
