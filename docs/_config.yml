@@ -1,0 +1,38 @@
+#######################################################################################
+# Book settings — https://jupyterbook.org/customize/config.html
+title: Global Environmental Change Lab Manual
+author: The UC Davis Global Environmental Change Lab
+copyright: "2026"
+logo: Images/logo.png
+only_build_toc_files: true
+
+execute:
+  execute_notebooks: "off"
+
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - linkify
+    - substitution
+    - tasklist
+
+repository:
+  url: https://github.com/UCDglobalchange/ucdglobalchange.github.io
+  path_to_book: docs
+  branch: main
+
+html:
+  favicon: Images/favicon.png
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: true
+  extra_footer: |
+    <p>Department of Land, Air and Water Resources · University of California, Davis</p>
+
+sphinx:
+  config:
+    html_show_copyright: true
+    myst_heading_anchors: 3
+    html_last_updated_fmt: "%b %d, %Y"
