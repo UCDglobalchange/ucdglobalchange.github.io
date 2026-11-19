@@ -4,6 +4,13 @@ Work through this list in your first week or two. Ask the PI or a lab mate if an
 
 ## UC Davis accounts and administration
 
+```{important}
+**High school students** need a UC Davis account before anything else on this list (Slack, Box,
+FARM). Send the PI your personal email address so the PI can start a **Temporary Affiliate Form**,
+then complete it from the email you receive. See
+[Undergraduate and High School Researchers](StudentResearchers.md#first-step-your-uc-davis-account-temporary-affiliate-form).
+```
+
 - [ ] Complete your hiring/enrollment paperwork with the department office.
 - [ ] Activate your UC Davis computing account (Kerberos ID) and email.
 - [ ] Set up two-factor authentication (Duo).

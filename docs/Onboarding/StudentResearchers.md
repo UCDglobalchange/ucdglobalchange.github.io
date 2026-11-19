@@ -18,6 +18,8 @@ explains how research works for you and which parts of this manual matter most.
 
 - Agree with your mentor and the PI on your **project goals**, a **weekly schedule**, and how you'll
   communicate (usually Slack).
+- **High school students**: first get your UC Davis account through the
+  [Temporary Affiliate Form](#first-step-your-uc-davis-account-temporary-affiliate-form).
 - Work through the parts of the [First-Week Checklist](FirstWeekChecklist.md) that apply to you:
   Slack, Box, GitHub, and, if your project needs it, a FARM account.
 
@@ -33,13 +35,30 @@ explains how research works for you and which parts of this manual matter most.
 
 ## High school students
 
+### First step: your UC Davis account (Temporary Affiliate Form)
+
+High school students don't automatically have a UC Davis account, and you need one for almost
+everything in the lab: **Slack**, the **Box** folder, **FARM**, and more. You get one through a
+**Temporary Affiliate Form**:
+
+1. **Send the PI your personal email address.** The PI starts the Temporary Affiliate Form for you.
+2. **Watch for an email** at that address with links to complete your part of the form. Check your
+   spam folder too, and complete it as soon as you can.
+3. Once the form is approved, you'll receive a **UC Davis email address and computing account**.
+   Activate it and set up two-factor authentication (Duo).
+4. Then continue with the [First-Week Checklist](FirstWeekChecklist.md): join Slack, get access to
+   the Box folder, and request a FARM account if your project needs one.
+
+```{tip}
+Start this as early as possible, ideally a few weeks before your first day, since the form must be
+completed and approved before you can get any lab accounts.
+```
+
+### Other things to know
+
 - Participation is arranged with the PI in advance and must follow UC Davis rules for minors
-  (under 18) taking part in university activities. The PI will tell you which forms and approvals
-  are needed (for example, parent or guardian consent) **before you start**.
-  <!-- TODO: link the program(s) high school students join through and the required forms. -->
-- Some accounts may not be available to you (for example, a UC Davis computing account or a FARM
-  account). Your mentor will set up what your project needs, such as a laptop environment or
-  access to shared data.
+  (under 18) taking part in university activities. The PI will tell you which other forms and
+  approvals are needed (for example, parent or guardian consent) **before you start**.
 - Work in the lab or on campus only at times agreed with your mentor.
 
 ## Most useful pages for you
