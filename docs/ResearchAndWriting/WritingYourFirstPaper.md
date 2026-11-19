@@ -34,7 +34,8 @@ understand the figure captures it before it fades.
 - They also give you the figure caption and talking points for lab meetings and conference talks.
 
 Keep the bullets next to the figure, for example in the notebook or script that makes it, in your
-research notes, or in a draft document in Box, and bring them to your 1:1 meetings.
+research notes, or in your 1:1 meeting-notes Google Doc in your Box folder, and bring them to
+your 1:1 meetings.
 
 ## Target journals
 

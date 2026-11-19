@@ -10,7 +10,7 @@ person to contact about that topic. Responsibilities rotate as people join and l
 | Area | Responsibilities | Contact |
 |------|------------------|---------|
 | **Slack** | Invites new members, manages channels, removes departing members | *Slack manager: TBD* |
-| **Box folder** | Shares the lab Box folder with new members, keeps it organized (templates, meeting notes, data backups) | *Box folder manager: TBD* |
+| **Box folder** | Shares the lab Box folder with new members, creates each member's folder and 1:1 meeting-notes Google Doc, keeps the folder organized (templates, meeting notes, data backups) | *Box folder manager: TBD* |
 | **GitHub organization** | Invites new members to [UCDglobalchange](https://github.com/UCDglobalchange), manages repository access | *TBD* |
 | **FARM and group storage** | First contact for FARM questions; keeps the `/quobyte/emoniergrp/README` dataset catalog current | *TBD* |
 | **Lab meetings** | Schedules presenters and the room or Zoom link | *TBD* |

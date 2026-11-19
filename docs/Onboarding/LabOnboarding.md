@@ -39,8 +39,9 @@ participate.
 
 **Individual (1:1) meetings** with the PI are either a **30-minute meeting every week** or a
 **1-hour meeting every other week**; agree with the PI on which works best for you. Come with an
-agenda: what you did, what went well, where you are stuck, and what you plan next. Keep a running
-meeting-notes document in your Box folder that both of you can see.
+agenda: what you did, what went well, where you are stuck, and what you plan next. Meeting notes
+are kept in a running **Google Doc** stored in **your own folder in the lab's shared Box folder**
+(see [Meeting notes](OrganizationAndScheduling.md#meeting-notes)).
 
 ## Office space and equipment
 

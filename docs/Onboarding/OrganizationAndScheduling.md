@@ -20,8 +20,21 @@ Keep a research log: what you ran, why, where the output is, and what you learne
 
 ## Meeting notes
 
-Keep one running document in your Box folder, shared with the PI, for your individual meetings: date, what you did,
-questions, decisions, and next steps.
+Notes for your 1:1 meetings with the PI go in **one running Google Doc**, stored in **your own
+folder in the lab's shared Box folder**. Each lab member has a folder there, and the PI can see and
+edit the document.
+
+For each meeting, add a new entry **at the top** with:
+
+- the date,
+- what you did since the last meeting (figures and results, with links),
+- questions and where you're stuck,
+- decisions made during the meeting,
+- next steps and who does them.
+
+Update it before each meeting so the PI can look at it beforehand. If you don't have a folder or
+the document yet, ask the Box folder manager (see
+[Lab Responsibilities](../NewMemberResources/Who_to_contact_for.md)).
 
 ## Tasks
 
